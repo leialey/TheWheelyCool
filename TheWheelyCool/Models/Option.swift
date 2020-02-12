@@ -9,6 +9,5 @@
 import RealmSwift
 
 class Option: Object {
-    @objc dynamic var name : String = ""
+    @objc dynamic var name: String = ""
 }
-

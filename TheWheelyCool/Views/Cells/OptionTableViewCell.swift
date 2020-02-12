@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OptionTableViewCell: UITableViewCell, OptionListCellDelegate {
+class OptionTableViewCell: UITableViewCell {
     @IBOutlet weak var optionTextField: UITextField!
     lazy private var presenter = OptionListPresenter()
     lazy private var option = Option()

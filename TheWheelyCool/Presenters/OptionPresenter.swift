@@ -24,7 +24,7 @@ class OptionListPresenter {
     init() {
         //Only one (default) list for now. In the future there can be many lists
         let currentListName = "default"
-        currentList = realm.objects(OptionList.self).filter("name == %@", currentListName).first ?? OptionList(name: "default")
+        currentList = realm.objects(OptionList.self).filter("name == %@", currentListName).first ?? OptionList(name: currentListName)
         options = currentList.options
         if currentList.realm == nil {
             addData(currentList)
@@ -45,7 +45,6 @@ class OptionListPresenter {
         }
     }
     
-    
     // MARK: - Private methods
     
     private func addData(_ object: Object) {
@@ -58,7 +57,7 @@ class OptionListPresenter {
         }
     }
     
-    private func updateData(_ value: Any?, for key: String, object: Option) throws  {
+    private func updateData(_ value: Any?, for key: String, object: Option) throws {
         try realm.write {
             object.setValue(value, forKey: key)
         }

@@ -41,7 +41,8 @@ class OptionsEntryViewController: UIViewController, OptionListPresenterDelegate 
     }
     
     func showStatus(_ status: TaskStatus) {
-        //To Show Error - I am skipping it for now to keep it simple (it's very unlikely to happen), though we could use SVProgressHUD, custom alert etc
+        //To Show Error - I am skipping it for now to keep it simple
+        //(it's very unlikely to happen), though we could use SVProgressHUD, custom alert etc
     }
     
     @objc override func handleKeyboard(notification: NSNotification) {
@@ -57,7 +58,8 @@ extension OptionsEntryViewController: UITableViewDataSource, UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: optionCellID, for: indexPath) as? OptionTableViewCell else { fatalError("Cannot cast to OptionTableViewCell") }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: optionCellID, for: indexPath)
+            as? OptionTableViewCell else { fatalError("Cannot cast to OptionTableViewCell") }
         cell.configure(presenter, indexPath.row)
         return cell
     }

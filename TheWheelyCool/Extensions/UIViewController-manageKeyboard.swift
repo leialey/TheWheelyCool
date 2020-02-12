@@ -15,14 +15,17 @@ extension UIViewController {
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
+    
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
 
 //To adjust content offset when showing / hiding keyboard
     func addKeyboardObserver() {
-        NotificationCenter.default.addObserver(self, selector: #selector(self.handleKeyboard), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(self.handleKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.handleKeyboard),
+                                               name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.handleKeyboard),
+                                               name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     func getKeyboardHeight(_ notification: NSNotification) -> CGFloat {

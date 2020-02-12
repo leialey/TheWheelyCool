@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WheelyCoolView: UIView, CAAnimationDelegate  {
+class WheelyCoolView: UIView {
     /// Stored properties
     var viewColor = UIColor.orange
     var textColor = UIColor.blue
@@ -19,7 +19,7 @@ class WheelyCoolView: UIView, CAAnimationDelegate  {
     
     /// Computed properties
     private var texts: [String] {
-        presenter.options.map( {$0.name} )
+        presenter.options.map({$0.name})
     }
     private var numberOfSectors: Int {
         presenter.options.count
@@ -27,12 +27,12 @@ class WheelyCoolView: UIView, CAAnimationDelegate  {
     private var sectorsToRotate: CGFloat {
         CGFloat(Int.random(in: 1 ..< 21))
     }
-    private var targetAngle: CGFloat {
-        sectorsToRotate * sectorSize
-    }
     private var sectorSize: CGFloat {
         //360degrees divided by the number of Sectors
         2 * .pi / CGFloat(numberOfSectors)
+    }
+    private var targetAngle: CGFloat {
+        sectorsToRotate * sectorSize
     }
     private var centerPoint: CGPoint {
         CGPoint(x: bounds.width / 2, y: bounds.height / 2)
@@ -63,7 +63,8 @@ class WheelyCoolView: UIView, CAAnimationDelegate  {
         //Set some attributes for the texts
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .center
-        let attributes = [NSAttributedString.Key.paragraphStyle: paragraphStyle, NSAttributedString.Key.foregroundColor: textColor]
+        let attributes = [NSAttributedString.Key.paragraphStyle: paragraphStyle,
+                          NSAttributedString.Key.foregroundColor: textColor]
         //It should be configured automatically before draw(_ rect: CGRect)
         guard let context = UIGraphicsGetCurrentContext() else { fatalError("Cannot get current context") }
         
@@ -76,17 +77,22 @@ class WheelyCoolView: UIView, CAAnimationDelegate  {
             context.translateBy(x: centerPoint.x, y: centerPoint.y)
             context.rotate(by: angle)
             //Text should be centered around textOffset
-            text.draw(at: CGPoint(x: textOffset - textBoundBox.width / 2, y: -textBoundBox.height / 2), withAttributes: attributes)
+            text.draw(at: CGPoint(x: textOffset - textBoundBox.width / 2,
+                                  y: -textBoundBox.height / 2), withAttributes: attributes)
             context.restoreGState()
         }
     }
     
     private func spinTo(_ angle: CGFloat) {
-        //As it always finds the shortest path to the target position (clockwise or counter-clockwise), we need to split the target angle into several ones <= 180 degress
+        //As it always finds the shortest path to the target position (clockwise or counter-clockwise),
+        //we need to split the target angle into several ones <= 180 degress
+        if angle <= 0.0 {
+            return
+        }
         UIView.animate(withDuration: spinningSpeed, delay: 0, options: .curveLinear, animations: { [weak self] in
             guard let self = self else { return }
             self.transform = self.transform.rotated(by: min(angle, .pi))
-        }) { [weak self] _ in
+        }) { [weak self] finished in
             self?.spinTo(angle - min(angle, .pi))
         }
     }
