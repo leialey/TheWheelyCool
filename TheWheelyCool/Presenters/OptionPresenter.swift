@@ -11,9 +11,9 @@ import RealmSwift
 
 class OptionListPresenter {
     private let realm = try! Realm()
-    weak var delegate: OptionListPresenterDelegate?
-    private(set) var currentList: OptionList
+    private var currentList: OptionList
     private(set) var options: List<Option>
+    weak var delegate: OptionListPresenterDelegate?
     var numberOfRows: Int {
         //To display empty option in the last row
         return options.count + 1

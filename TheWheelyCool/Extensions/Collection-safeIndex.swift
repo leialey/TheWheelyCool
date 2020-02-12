@@ -8,6 +8,7 @@
 
 import Foundation
 
+//To avoid Index out of range error
 public extension Collection {
     subscript(safe index: Index) -> Element? {
         return indices.contains(index) ? self[index] : nil

@@ -8,21 +8,16 @@
 
 import UIKit
 
-class WheelyCoolView: UIView {
+@IBDesignable class WheelyCoolView: UIView {
     /// Stored properties
-    var viewColor = UIColor.orange
-    var textColor = UIColor.blue
-    var spinningSpeed = 0.1 //seconds it will take to rotate by 180 degrees
-    
-    /// Constants
-    private let presenter = OptionListPresenter()
+    @IBInspectable var viewColor = UIColor.orange
+    @IBInspectable var textColor = UIColor.blue
+    @IBInspectable var spinningSpeed = 0.1 //seconds it will take to rotate by 180 degrees
+    @IBInspectable var texts = ["Option 1", "Option 2", "Option 3"]
     
     /// Computed properties
-    private var texts: [String] {
-        presenter.options.map({$0.name})
-    }
     private var numberOfSectors: Int {
-        presenter.options.count
+        texts.count
     }
     private var sectorsToRotate: CGFloat {
         CGFloat(Int.random(in: 1 ..< 21))

@@ -8,15 +8,15 @@
 
 import UIKit
 
-class WheelyCoolTriangleView: UIView {
-    var viewColor = UIColor.blue
+@IBDesignable class WheelyCoolTriangleView: UIView {
+    @IBInspectable var viewColor = UIColor.blue
     
     override func draw(_ rect: CGRect) {
         viewColor.setFill()
         let path = UIBezierPath()
-        path.move(to: CGPoint(x: 0, y: self.frame.size.height / 2))
-        path.addLine(to: CGPoint(x: self.frame.size.width, y: 0))
-        path.addLine(to: CGPoint(x: self.frame.size.width, y: self.frame.size.height))
+        path.move(to: CGPoint(x: 0, y: bounds.size.height / 2))
+        path.addLine(to: CGPoint(x: bounds.size.width, y: 0))
+        path.addLine(to: CGPoint(x: bounds.size.width, y: bounds.size.height))
         path.close()
         path.fill()
     }

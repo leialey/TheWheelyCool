@@ -10,9 +10,11 @@ import UIKit
 
 class WheelViewController: UIViewController {
     @IBOutlet weak var wheelView: WheelyCoolView!
-    
+    private let presenter = OptionListPresenter()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        wheelView.texts = presenter.options.map({$0.name})
     }
     
     @IBAction func spinTheWheel(_ sender: UIButton) {
