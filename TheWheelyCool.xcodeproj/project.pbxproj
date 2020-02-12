@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		154560BC23F120B70088FE26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154560BB23F120B70088FE26 /* AppDelegate.swift */; };
+		154560BE23F120B70088FE26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154560BD23F120B70088FE26 /* SceneDelegate.swift */; };
+		154560C023F120B70088FE26 /* OptionsEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154560BF23F120B70088FE26 /* OptionsEntryViewController.swift */; };
+		154560C323F120B70088FE26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154560C123F120B70088FE26 /* Main.storyboard */; };
+		154560C523F120BF0088FE26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 154560C423F120BF0088FE26 /* Assets.xcassets */; };
+		154560C823F120BF0088FE26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154560C623F120BF0088FE26 /* LaunchScreen.storyboard */; };
+		154560D223F1250B0088FE26 /* OptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154560D023F1250B0088FE26 /* OptionTableViewCell.swift */; };
+		154560D323F1250B0088FE26 /* OptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 154560D123F1250B0088FE26 /* OptionTableViewCell.xib */; };
+		154560D623F134C60088FE26 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154560D523F134C60088FE26 /* Option.swift */; };
+		154560D923F1353B0088FE26 /* OptionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154560D823F1353B0088FE26 /* OptionPresenter.swift */; };
+		154560DC23F13A160088FE26 /* Collection-safeIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154560DB23F13A160088FE26 /* Collection-safeIndex.swift */; };
+		154560E323F14A5C0088FE26 /* ViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154560E223F14A5C0088FE26 /* ViewProtocols.swift */; };
+		154560E523F14C980088FE26 /* TaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154560E423F14C980088FE26 /* TaskStatus.swift */; };
+		154560E823F16ED60088FE26 /* WheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154560E723F16ED60088FE26 /* WheelViewController.swift */; };
+		154560EC23F1B4FB0088FE26 /* WheelyCoolTriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154560EB23F1B4FB0088FE26 /* WheelyCoolTriangleView.swift */; };
+		154560EE23F266040088FE26 /* UIViewController-manageKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154560ED23F266040088FE26 /* UIViewController-manageKeyboard.swift */; };
+		154560F023F266670088FE26 /* WheelyCoolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154560EF23F266670088FE26 /* WheelyCoolView.swift */; };
+		154560F823F3831B0088FE26 /* UpdateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154560F723F3831A0088FE26 /* UpdateType.swift */; };
+		154560FA23F3AC470088FE26 /* OptionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154560F923F3AC470088FE26 /* OptionList.swift */; };
+		860AE38B6D6059BA62D6E49C /* Pods_TheWheelyCool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C70BDA0875C0EBEB6CD9528 /* Pods_TheWheelyCool.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		154560B823F120B70088FE26 /* TheWheelyCool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheWheelyCool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		154560BB23F120B70088FE26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		154560BD23F120B70088FE26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		154560BF23F120B70088FE26 /* OptionsEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsEntryViewController.swift; sourceTree = "<group>"; };
+		154560C223F120B70088FE26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		154560C423F120BF0088FE26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		154560C723F120BF0088FE26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		154560C923F120BF0088FE26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		154560D023F1250B0088FE26 /* OptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTableViewCell.swift; sourceTree = "<group>"; };
+		154560D123F1250B0088FE26 /* OptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionTableViewCell.xib; sourceTree = "<group>"; };
+		154560D523F134C60088FE26 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		154560D823F1353B0088FE26 /* OptionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionPresenter.swift; sourceTree = "<group>"; };
+		154560DB23F13A160088FE26 /* Collection-safeIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection-safeIndex.swift"; sourceTree = "<group>"; };
+		154560E223F14A5C0088FE26 /* ViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocols.swift; sourceTree = "<group>"; };
+		154560E423F14C980088FE26 /* TaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStatus.swift; sourceTree = "<group>"; };
+		154560E723F16ED60088FE26 /* WheelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelViewController.swift; sourceTree = "<group>"; };
+		154560EB23F1B4FB0088FE26 /* WheelyCoolTriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyCoolTriangleView.swift; sourceTree = "<group>"; };
+		154560ED23F266040088FE26 /* UIViewController-manageKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-manageKeyboard.swift"; sourceTree = "<group>"; };
+		154560EF23F266670088FE26 /* WheelyCoolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyCoolView.swift; sourceTree = "<group>"; };
+		154560F723F3831A0088FE26 /* UpdateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateType.swift; sourceTree = "<group>"; };
+		154560F923F3AC470088FE26 /* OptionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionList.swift; sourceTree = "<group>"; };
+		2020B5EC6BB07C95A1D428D3 /* Pods-TheWheelyCool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWheelyCool.release.xcconfig"; path = "Target Support Files/Pods-TheWheelyCool/Pods-TheWheelyCool.release.xcconfig"; sourceTree = "<group>"; };
+		5C70BDA0875C0EBEB6CD9528 /* Pods_TheWheelyCool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheWheelyCool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B79E4B7ED314E8CE0F7D750 /* Pods-TheWheelyCool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWheelyCool.debug.xcconfig"; path = "Target Support Files/Pods-TheWheelyCool/Pods-TheWheelyCool.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		154560B523F120B70088FE26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				860AE38B6D6059BA62D6E49C /* Pods_TheWheelyCool.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		154560AF23F120B70088FE26 = {
+			isa = PBXGroup;
+			children = (
+				154560BA23F120B70088FE26 /* TheWheelyCool */,
+				154560B923F120B70088FE26 /* Products */,
+				EDEC76B6A86AD3576F8DB0A5 /* Pods */,
+				6260A080B7A1E54F36A53B69 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		154560B923F120B70088FE26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				154560B823F120B70088FE26 /* TheWheelyCool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		154560BA23F120B70088FE26 /* TheWheelyCool */ = {
+			isa = PBXGroup;
+			children = (
+				154560C923F120BF0088FE26 /* Info.plist */,
+				154560BB23F120B70088FE26 /* AppDelegate.swift */,
+				154560BD23F120B70088FE26 /* SceneDelegate.swift */,
+				154560DA23F139F90088FE26 /* Extensions */,
+				154560D423F134B40088FE26 /* Models */,
+				154560D723F1352B0088FE26 /* Presenters */,
+				154560CF23F120CE0088FE26 /* Views */,
+			);
+			path = TheWheelyCool;
+			sourceTree = "<group>";
+		};
+		154560CF23F120CE0088FE26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				154560C423F120BF0088FE26 /* Assets.xcassets */,
+				154560C623F120BF0088FE26 /* LaunchScreen.storyboard */,
+				154560C123F120B70088FE26 /* Main.storyboard */,
+				154560E223F14A5C0088FE26 /* ViewProtocols.swift */,
+				154560BF23F120B70088FE26 /* OptionsEntryViewController.swift */,
+				154560E723F16ED60088FE26 /* WheelViewController.swift */,
+				154560EF23F266670088FE26 /* WheelyCoolView.swift */,
+				154560EB23F1B4FB0088FE26 /* WheelyCoolTriangleView.swift */,
+				154560E623F1580A0088FE26 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		154560D423F134B40088FE26 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				154560D523F134C60088FE26 /* Option.swift */,
+				154560F923F3AC470088FE26 /* OptionList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		154560D723F1352B0088FE26 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				154560D823F1353B0088FE26 /* OptionPresenter.swift */,
+				154560E423F14C980088FE26 /* TaskStatus.swift */,
+				154560F723F3831A0088FE26 /* UpdateType.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		154560DA23F139F90088FE26 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				154560DB23F13A160088FE26 /* Collection-safeIndex.swift */,
+				154560ED23F266040088FE26 /* UIViewController-manageKeyboard.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		154560E623F1580A0088FE26 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				154560D023F1250B0088FE26 /* OptionTableViewCell.swift */,
+				154560D123F1250B0088FE26 /* OptionTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6260A080B7A1E54F36A53B69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C70BDA0875C0EBEB6CD9528 /* Pods_TheWheelyCool.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDEC76B6A86AD3576F8DB0A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B79E4B7ED314E8CE0F7D750 /* Pods-TheWheelyCool.debug.xcconfig */,
+				2020B5EC6BB07C95A1D428D3 /* Pods-TheWheelyCool.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		154560B723F120B70088FE26 /* TheWheelyCool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 154560CC23F120BF0088FE26 /* Build configuration list for PBXNativeTarget "TheWheelyCool" */;
+			buildPhases = (
+				CB1F66F8434E5287DB3CD2BE /* [CP] Check Pods Manifest.lock */,
+				154560B423F120B70088FE26 /* Sources */,
+				154560B523F120B70088FE26 /* Frameworks */,
+				154560B623F120B70088FE26 /* Resources */,
+				5B22EDA4E90094C6EEC2515A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheWheelyCool;
+			productName = TheWheelyCool;
+			productReference = 154560B823F120B70088FE26 /* TheWheelyCool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		154560B023F120B70088FE26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Ekaterina Rodionova";
+				TargetAttributes = {
+					154560B723F120B70088FE26 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 154560B323F120B70088FE26 /* Build configuration list for PBXProject "TheWheelyCool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 154560AF23F120B70088FE26;
+			productRefGroup = 154560B923F120B70088FE26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				154560B723F120B70088FE26 /* TheWheelyCool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		154560B623F120B70088FE26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154560D323F1250B0088FE26 /* OptionTableViewCell.xib in Resources */,
+				154560C823F120BF0088FE26 /* LaunchScreen.storyboard in Resources */,
+				154560C523F120BF0088FE26 /* Assets.xcassets in Resources */,
+				154560C323F120B70088FE26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B22EDA4E90094C6EEC2515A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheWheelyCool/Pods-TheWheelyCool-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheWheelyCool/Pods-TheWheelyCool-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheWheelyCool/Pods-TheWheelyCool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB1F66F8434E5287DB3CD2BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheWheelyCool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		154560B423F120B70088FE26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154560D223F1250B0088FE26 /* OptionTableViewCell.swift in Sources */,
+				154560D923F1353B0088FE26 /* OptionPresenter.swift in Sources */,
+				154560EC23F1B4FB0088FE26 /* WheelyCoolTriangleView.swift in Sources */,
+				154560E323F14A5C0088FE26 /* ViewProtocols.swift in Sources */,
+				154560F023F266670088FE26 /* WheelyCoolView.swift in Sources */,
+				154560C023F120B70088FE26 /* OptionsEntryViewController.swift in Sources */,
+				154560D623F134C60088FE26 /* Option.swift in Sources */,
+				154560EE23F266040088FE26 /* UIViewController-manageKeyboard.swift in Sources */,
+				154560DC23F13A160088FE26 /* Collection-safeIndex.swift in Sources */,
+				154560BC23F120B70088FE26 /* AppDelegate.swift in Sources */,
+				154560BE23F120B70088FE26 /* SceneDelegate.swift in Sources */,
+				154560E823F16ED60088FE26 /* WheelViewController.swift in Sources */,
+				154560FA23F3AC470088FE26 /* OptionList.swift in Sources */,
+				154560F823F3831B0088FE26 /* UpdateType.swift in Sources */,
+				154560E523F14C980088FE26 /* TaskStatus.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		154560C123F120B70088FE26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				154560C223F120B70088FE26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		154560C623F120BF0088FE26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				154560C723F120BF0088FE26 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		154560CA23F120BF0088FE26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		154560CB23F120BF0088FE26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		154560CD23F120BF0088FE26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B79E4B7ED314E8CE0F7D750 /* Pods-TheWheelyCool.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MJ93Q6SVAB;
+				INFOPLIST_FILE = TheWheelyCool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.EkaterinaRodionova.TheWheelyCool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		154560CE23F120BF0088FE26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2020B5EC6BB07C95A1D428D3 /* Pods-TheWheelyCool.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MJ93Q6SVAB;
+				INFOPLIST_FILE = TheWheelyCool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.EkaterinaRodionova.TheWheelyCool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		154560B323F120B70088FE26 /* Build configuration list for PBXProject "TheWheelyCool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154560CA23F120BF0088FE26 /* Debug */,
+				154560CB23F120BF0088FE26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		154560CC23F120BF0088FE26 /* Build configuration list for PBXNativeTarget "TheWheelyCool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154560CD23F120BF0088FE26 /* Debug */,
+				154560CE23F120BF0088FE26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 154560B023F120B70088FE26 /* Project object */;
+}
